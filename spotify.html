@@ -29,9 +29,15 @@
             <div class="library bg-grey rounded">
                 <div class="heading"><img src="./svg/library.svg" alt="library" class="invert">
                     <h2> Your Library</h2>
+
+                </div>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
                 </div>
 
-                <div class="playlist">
+                <!-- <div class="playlist">
                     <div class="">
                         Create your first playlist
                         <span>it's easy, we'll halp you</span>
@@ -42,7 +48,7 @@
                     Let's find some podcast to follow
                     <span>we'll keep you update on new episodes</span>
                     <button>Browse podcasts</button>
-                </div>
+                </div> -->
                 <div class="footer">
                     <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
                     <div><a href="https://www.spotify.com/in-en/privacy/"><span>Privacy Center</span></a></div>
@@ -69,6 +75,9 @@
         <div class="right bg-grey rounded m-2 ">
             <div class="header flex nav">
                 <div class="nav-svg">
+                    <div class="hamburger">
+                        <img src="./svg/hamburger.svg" alt="">
+                    </div>
                     <img src="./svg/left.svg" alt="error">
                     <img src="./svg/right.svg" alt="error">
                 </div>
@@ -78,7 +87,7 @@
 
             </div>
             <div class="spotify-playlist">
-                <h1>Spotify Playlist</h1>
+                <h1 id="importing">Spotify Playlist</h1>
                 <div class="cardcontainer">
 
                     <div class="card rounded">
@@ -96,22 +105,32 @@
 
         </div>
 
-
     </div>
-    <div class="playsong">
-        <div class="songinfo">
 
+    <div class="playsong">
+        <div class="songinfotime">
+            <div class="songinfo">
+        
+            </div>
+            <div class="songtime">
+                
+            </div>
+        </div>
+
+        <div class="seekbar">
+
+            <div id="circle"></div>
         </div>
         <div class="songbuttons">
-            <img src="./svg/playprevious.svg" alt="">
-            <img src="./svg/play.svg" alt="">
-            <img src="./svg/playnext.svg" alt="error">
+            <img id="previous" src="./svg/playprevious.svg" alt="">
+            <img id="play" src="./svg/play.svg" alt="">
+            <img id="next" src="./svg/playnext.svg" alt="error">
         </div>
-        <div class="songtime">
-               
-        </div>
+
     </div>
     <script src="spotify.js"></script>
+    <!-- <script src="spotifyrev.js"></script> -->
+
 </body>
 
 </html>
